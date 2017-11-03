@@ -1,5 +1,5 @@
 /*
-    Iterate throw given array and replace each element if:
+    Iterate through given array and replace each element if:
     -element is even replace with "Even"
     -element is divisible by 7 replace with "DivBy7"
     -element is divisible by 7 and 5 replace with "DivBy7and5"
