@@ -11,9 +11,23 @@
  */
 
 window.onload = ()=> {
-    //given array
+
     let data = [-5,3,6,8,14,-7,2,1,35,3,5,-14,8,4,-1,-3];
 
+    for (var i = 0; i < data.length; i++) {
+      if(data[i] % 2 == 0){
+        data[i] = "Even";
+      }
+      if(data[i] % 7 == 0 && data[i] % 5 == 0){
+        data[i] = "DivBy7and5";
+      }
+      if(data[i] % 7 == 0){
+        data[i] = "DivBy7";
+      }
+      if(data[i] < 0){
+        data[i] = "Negative";
+      }
+    }
 
-    console.log(data);
+    document.body.innerHTML = data;
 };
